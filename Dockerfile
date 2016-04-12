@@ -12,15 +12,15 @@ RUN wget http://files.drush.org/drush.phar \
   && drush init -y
 
 # install Xdebug, from https://xdebug.org/docs/install
-RUN pecl install xdebug && \
-  docker-php-ext-enable xdebug
+RUN pecl install xdebug \
+  && docker-php-ext-enable xdebug
 
 # enable Xdebug remote debugging
 RUN { \
 		echo 'xdebug.remote_autostart=true'; \
 		echo 'xdebug.remote_enable=true'; \
 		echo 'xdebug.remote_connect_back=true'; \
-	} > /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # download devel module
 RUN curl -fSL "https://ftp.drupal.org/files/projects/devel-7.x-1.x-dev.tar.gz" -o devel.tar.gz \
