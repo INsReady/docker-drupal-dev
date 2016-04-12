@@ -13,7 +13,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN wget http://files.drush.org/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
-  && drush init
+  && drush init -y
 
 # install Drupal Console, from https://drupalconsole.com/
 RUN curl https://drupalconsole.com/installer -L -o drupal.phar \
