@@ -1,8 +1,8 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`8.1`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.1/Dockerfile)
--	[`8.0` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.0/Dockerfile)
--	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/7/Dockerfile)
+-	[`8.1`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/Dockerfile)
+-	[`8.0` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/8.0/Dockerfile)
+-	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/7/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-dev` GitHub repo](https://github.com/INsReady/docker-drupal-dev).
 
