@@ -29,7 +29,7 @@ RUN { \
 		echo 'xdebug.remote_autostart=true'; \
 		echo 'xdebug.remote_enable=true'; \
 		echo 'xdebug.remote_connect_back=true'; \
-	} > /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # download devel module
 RUN curl -fSL "https://ftp.drupal.org/files/projects/devel-8.x-1.x-dev.tar.gz" -o devel.tar.gz \
