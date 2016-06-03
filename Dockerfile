@@ -25,6 +25,7 @@ RUN { \
 # download devel module
 RUN curl -fSL "https://ftp.drupal.org/files/projects/devel-7.x-1.x-dev.tar.gz" -o devel.tar.gz \
   && tar -xvzf devel.tar.gz \
+  && rm devel.tar.gz \
   && mv devel sites/all/modules/
 
 ENV TERM xterm
