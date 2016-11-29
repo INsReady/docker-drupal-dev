@@ -22,6 +22,15 @@ RUN { \
 		echo 'xdebug.remote_connect_back=true'; \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
+# install phpredis extension
+ENV PHPREDIS_VERSION 3.0.0
+RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
+    && tar xfz /tmp/redis.tar.gz \
+    && rm -r /tmp/redis.tar.gz \
+    && mkdir /usr/src/php/ext -p \
+    && mv phpredis-$PHPREDIS_VERSION /usr/src/php/ext/redis \
+    && docker-php-ext-install redis
+
 # download devel module
 RUN curl -fSL "https://ftp.drupal.org/files/projects/devel-7.x-1.x-dev.tar.gz" -o devel.tar.gz \
   && tar -xvzf devel.tar.gz \
