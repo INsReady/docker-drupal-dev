@@ -24,3 +24,4 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 - Drupal Console
 - Xdebug (Remote debugging enabled as default)
 - Drupal Devel module
+- phpredis
