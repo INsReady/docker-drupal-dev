@@ -1,4 +1,4 @@
-FROM drupal:8.3
+FROM drupal:8.3-rc
 
 # install the PHP extensions we need
 RUN apt-get update \
