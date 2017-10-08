@@ -10,7 +10,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer
 
 
-# download df
+# download lightning
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project acquia/lightning-project:^8.1.0 www --no-interaction -vvv \

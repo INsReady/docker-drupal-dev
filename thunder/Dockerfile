@@ -10,7 +10,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer
 
 
-# download df
+# download thunder
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project burdamagazinorg/thunder-project www --stability dev --no-interaction -vvv \
