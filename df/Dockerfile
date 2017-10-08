@@ -1,0 +1,18 @@
+FROM drupal:8.4
+
+# install extra tools
+RUN apt-get update \
+  && apt-get install -y git \
+  && rm -rf /var/lib/apt/lists/*
+
+# install Composer globally
+RUN curl -sS https://getcomposer.org/installer | php \
+  && mv composer.phar /usr/local/bin/composer
+
+
+# download df
+RUN cd /var \
+    && rm -rf /var/www \
+    && composer create-project acquia/df-project:^8.2.0@RC www --no-interaction -vvv \
+    && ln -s /var/www/web /var/www/docroot \
+    && chown -R www-data:www-data /var/www/docroot
