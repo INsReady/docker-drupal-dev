@@ -14,5 +14,5 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project acquia/lightning-project:^8.1.0 www --no-interaction -vvv \
-    && ln -s /var/www/web /var/www/docroot \
+    && ln -s /var/www/docroot /var/www/html \
     && chown -R www-data:www-data /var/www/docroot

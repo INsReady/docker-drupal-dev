@@ -14,5 +14,5 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project acquia/df-project:^8.2.0@RC www --no-interaction -vvv \
-    && ln -s /var/www/web /var/www/docroot \
+    && ln -s /var/www/docroot /var/www/html  \
     && chown -R www-data:www-data /var/www/docroot
