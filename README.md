@@ -3,6 +3,7 @@
 -   [`df` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/df/Dockerfile)
 -   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`lightning` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/lightning/Dockerfile)
+-   [`varbase` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/varbase/Dockerfile)
 -	[`8.3` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/8.3/Dockerfile)
 -	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/7/Dockerfile)
 
@@ -34,6 +35,7 @@ See the supported tags above. Please use the respective Docker tags to download 
 - [Demo framework](https://www.drupal.org/project/df)
 - [Thunder](https://www.drupal.org/project/thunder)
 - [Lightning](https://www.drupal.org/project/lightning)
+- [Varbase](https://www.drupal.org/project/varbase)
 
 ## Contributing
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
