@@ -1,8 +1,10 @@
 ## Supported tags and respective `Dockerfile` links
 -	[`8.4`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.4/Dockerfile)
+-   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
 -   [`df` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/df/Dockerfile)
--   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`lightning` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/lightning/Dockerfile)
+-   [`reservoir` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/reservoir/Dockerfile)
+-   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`varbase` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/varbase/Dockerfile)
 -	[`8.3` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/8.3/Dockerfile)
 -	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/7/Dockerfile)
@@ -15,7 +17,7 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 
 > [Offical Drupal Docker Library](https://hub.docker.com/_/drupal/)
 
-## What tools are included?
+## What tools are included in the developer environment?
 
 - Git
 - MariaDB Client
@@ -32,10 +34,13 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 
 See the supported tags above. Please use the respective Docker tags to download the Drupal distribution below:
 
+- [Contenta CMS](https://www.drupal.org/project/contentacms)
 - [Demo framework](https://www.drupal.org/project/df)
-- [Thunder](https://www.drupal.org/project/thunder)
 - [Lightning](https://www.drupal.org/project/lightning)
+- [Reservoir](https://github.com/acquia/reservoir)
+- [Thunder](https://www.drupal.org/project/thunder)
 - [Varbase](https://www.drupal.org/project/varbase)
+- **Drupal Commerce** has its own dedicated [docker image]((https://hub.docker.com/r/insready/drupal-commerce/)).
 
 ## Contributing
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
