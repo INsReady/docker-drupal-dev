@@ -1,12 +1,12 @@
 ## Supported tags and respective `Dockerfile` links
--	[`8.4`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.4/Dockerfile)
+-	[`8.5`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.5/Dockerfile)
+-	[`8.4` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.4/Dockerfile)
 -   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
 -   [`df` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/df/Dockerfile)
 -   [`lightning` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/lightning/Dockerfile)
 -   [`reservoir` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/reservoir/Dockerfile)
 -   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`varbase` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/varbase/Dockerfile)
--	[`8.3` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/8.3/Dockerfile)
 -	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/7/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-dev` GitHub repo](https://github.com/INsReady/docker-drupal-dev).
