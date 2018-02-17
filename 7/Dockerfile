@@ -5,8 +5,9 @@ RUN apt-get update \
   && apt-get install -y git mariadb-client wget nano \
   && rm -rf /var/lib/apt/lists/*
 
-# install drush, from http://docs.drush.org/en/master/install/
-RUN wget http://files.drush.org/drush.phar \
+# install drush, from http://docs.drush.org/en/8.x/install/
+ENV DRUSH_VERSION 8.1.16
+RUN curl -L -o ./drush.phar https://github.com/phpredis/phpredis/archive/$DRUSH_VERSION.tar.gz \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
   && drush init -y
