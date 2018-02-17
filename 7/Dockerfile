@@ -7,8 +7,7 @@ RUN apt-get update \
 
 # install drush, from http://docs.drush.org/en/8.x/install/
 ENV DRUSH_VERSION 8.1.16
-RUN curl -L -o ./drush.phar.tar.gz https://github.com/drush-ops/drush/archive/$DRUSH_VERSION.tar.gz \
-  && tar xfz ./drush.phar.tar.gz \
+RUN wget https://github.com/drush-ops/drush/releases/download/$DRUSH_VERSION/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
   && drush init -y
