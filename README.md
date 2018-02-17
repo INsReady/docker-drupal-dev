@@ -40,7 +40,7 @@ See the supported tags above. Please use the respective Docker tags to download 
 - [Reservoir](https://github.com/acquia/reservoir)
 - [Thunder](https://www.drupal.org/project/thunder)
 - [Varbase](https://www.drupal.org/project/varbase)
-- **Drupal Commerce** has its own dedicated [docker image]((https://hub.docker.com/r/insready/drupal-commerce/)).
+- **Drupal Commerce** has its own dedicated [docker image](https://hub.docker.com/r/insready/drupal-commerce/).
 
 ## Contributing
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
