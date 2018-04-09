@@ -9,8 +9,13 @@ RUN apt-get update \
 RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer
 
-# install drush, from http://docs.drush.org/en/master/install/
-RUN composer require drush/drush
+# install drush, from http://docs.drush.org/en/master/install/,
+RUN composer require drush/drush \
+  && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \
+  && chmod +x drush.phar \
+  && mv drush.phar /usr/local/bin/drush \
+  && drush self-update \
+  && drush init
 
 # install Drupal Console, from https://drupalconsole.com/
 RUN curl https://drupalconsole.com/installer -L -o drupal.phar \
