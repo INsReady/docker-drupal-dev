@@ -1,8 +1,7 @@
 ## Supported tags and respective `Dockerfile` links
--	[`8.5`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.5/Dockerfile)
--	[`8.4` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.4/Dockerfile)
+-	[`8.6`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.6/Dockerfile)
+-	[`8.5` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.5/Dockerfile)
 -   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
--   [`df` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/df/Dockerfile)
 -   [`lightning` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/lightning/Dockerfile)
 -   [`reservoir` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/reservoir/Dockerfile)
 -   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
@@ -35,7 +34,6 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 See the supported tags above. Please use the respective Docker tags to download the Drupal distribution below:
 
 - [Contenta CMS](https://www.drupal.org/project/contentacms)
-- [Demo framework](https://www.drupal.org/project/df)
 - [Lightning](https://www.drupal.org/project/lightning)
 - [Reservoir](https://github.com/acquia/reservoir)
 - [Thunder](https://www.drupal.org/project/thunder)
