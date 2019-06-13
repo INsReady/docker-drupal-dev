@@ -2,7 +2,7 @@ FROM drupal:8.7
 
 # install extra tools
 RUN apt-get update \
-  && apt-get install -y git \
+  && apt-get install -y git apt-utils \
   && rm -rf /var/lib/apt/lists/*
 
 # install Composer globally
