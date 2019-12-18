@@ -39,4 +39,11 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/devel-7.x-1.x-dev.tar.gz" -
   && rm devel.tar.gz \
   && mv devel sites/all/modules/
 
+# install and config mhsendmail for mailhog, from https://devilbox.readthedocs.io/en/latest/custom-container/enable-mailhog.html#tl-dr
+RUN curl -fSL "https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64" -o mhsendmail \
+  && chmod +x mhsendmail \
+  && mv mhsendmail /usr/local/bin/ \
+  && echo "sendmail_path = '/usr/local/bin/mhsendmail --smtp-addr=\"mailhog:1025\"'" >> /usr/local/etc/php/conf.d/mailhog.ini
+
 ENV TERM xterm
+

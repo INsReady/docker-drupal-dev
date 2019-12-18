@@ -28,6 +28,7 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 - Xdebug (Remote debugging enabled as default)
 - Drupal Devel module
 - phpredis
+- mhsendmail (for Mailhog)
 
 ## Distribution supported
 
