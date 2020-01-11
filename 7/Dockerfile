@@ -6,7 +6,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # install drush, from http://docs.drush.org/en/8.x/install/
-ENV DRUSH_VERSION 8.1.16
+ENV DRUSH_VERSION 8.3.2
 RUN wget https://github.com/drush-ops/drush/releases/download/$DRUSH_VERSION/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
@@ -21,7 +21,7 @@ RUN { \
 		echo 'xdebug.remote_autostart=true'; \
 		echo 'xdebug.remote_enable=true'; \
 		echo 'xdebug.remote_connect_back=true'; \
-    echo 'memory_limit = 1024M'; \
+    echo 'memory_limit = 2048M'; \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # install phpredis extension
