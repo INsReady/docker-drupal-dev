@@ -10,7 +10,6 @@ RUN composer require drush/drush \
   && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
-  && drush self-update \
   && drush init
 
 # install Xdebug, from https://xdebug.org/docs/install
