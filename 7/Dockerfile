@@ -6,7 +6,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # install drush, from http://docs.drush.org/en/8.x/install/
-ENV DRUSH_VERSION 8.3.2
+ENV DRUSH_VERSION 8.4.5
 RUN wget https://github.com/drush-ops/drush/releases/download/$DRUSH_VERSION/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
@@ -25,7 +25,7 @@ RUN { \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # install phpredis extension
-ENV PHPREDIS_VERSION 3.1.2
+ENV PHPREDIS_VERSION 5.3.2
 RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
     && tar xfz /tmp/redis.tar.gz \
     && rm -r /tmp/redis.tar.gz \

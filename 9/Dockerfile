@@ -5,9 +5,9 @@ RUN apt-get update \
   && apt-get install -y git mariadb-client wget nano \
   && rm -rf /var/lib/apt/lists/*
 
-# install drush launcher, from http://docs.drush.org/en/master/install/,
+# install drush launcher, from https://github.com/drush-ops/drush-launcher#installation---phar,
 RUN composer require drush/drush \
-  && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \
+  && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \
   && drush self-update \
