@@ -1,6 +1,6 @@
 ## Supported tags and respective `Dockerfile` links
--	[`8.8`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.8/Dockerfile)
--	[`8.7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8.7/Dockerfile)
+-	[`9`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/9/Dockerfile)
+-	[`8` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8/Dockerfile)
 -   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
 -   [`lightning` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/lightning/Dockerfile)
 -   [`reservoir` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/reservoir/Dockerfile)
