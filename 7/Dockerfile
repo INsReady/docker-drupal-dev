@@ -18,9 +18,9 @@ RUN pecl install xdebug \
 
 # enable Xdebug remote debugging
 RUN { \
-		echo 'xdebug.remote_autostart=true'; \
-		echo 'xdebug.remote_enable=true'; \
-		echo 'xdebug.remote_connect_back=true'; \
+    echo 'xdebug.mode=debug'; \
+		echo 'xdebug.discover_client_host=true'; \
+    echo 'xdebug.client_host=host.docker.internal'; \
     echo 'memory_limit = 2048M'; \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
