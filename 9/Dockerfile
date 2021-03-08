@@ -22,6 +22,7 @@ RUN { \
     echo 'xdebug.mode=debug'; \
 		echo 'xdebug.discover_client_host=true'; \
     echo 'xdebug.client_host=host.docker.internal'; \
+    echo 'xdebug.start_with_request=yes'; \
     echo 'memory_limit = 2048M'; \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
