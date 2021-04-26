@@ -2,7 +2,7 @@ FROM drupal:8.9
 
 # install the PHP extensions we need
 RUN apt-get update \
-  && apt-get install -y git mariadb-client wget nano \
+  && apt-get install -y git mariadb-client wget nano pv \
   && rm -rf /var/lib/apt/lists/*
 
 # install Composer globally
@@ -24,11 +24,11 @@ RUN pecl install xdebug \
 # enable Xdebug remote debugging
 RUN { \
     echo 'xdebug.mode=debug'; \
-		echo 'xdebug.discover_client_host=true'; \
+    echo 'xdebug.discover_client_host=true'; \
     echo 'xdebug.client_host=host.docker.internal'; \
     echo 'xdebug.start_with_request=yes'; \
     echo 'memory_limit = 2048M'; \
-	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # install phpredis extension
 ENV PHPREDIS_VERSION 5.3.2
