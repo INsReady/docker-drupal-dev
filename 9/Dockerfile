@@ -24,6 +24,8 @@ RUN { \
     echo 'xdebug.client_host=host.docker.internal'; \
     echo 'xdebug.start_with_request=yes'; \
     echo 'memory_limit = 2048M'; \
+    echo 'error_log = /var/log/php_error.log'; \
+    echo 'xdebug.log = /var/log/xdebug.log'; \
 } >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # install phpredis extension
