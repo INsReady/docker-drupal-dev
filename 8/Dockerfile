@@ -32,6 +32,9 @@ RUN { \
     echo 'xdebug.log = /var/log/xdebug.log'; \
 } >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
+# preemptively creates php error log file, and give it to www-data
+RUN touch /var/log/php_error.log && chown www-data:www-data /var/log/php_error.log
+
 # install phpredis extension
 ENV PHPREDIS_VERSION 5.3.2
 RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
