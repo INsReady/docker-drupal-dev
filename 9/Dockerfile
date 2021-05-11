@@ -28,9 +28,6 @@ RUN { \
     echo 'xdebug.log = /var/log/xdebug.log'; \
 } >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
-# Allow Apache/PHP to create log files there as owned by www-data
-RUN chmod 777 /var/log
-
 # install phpredis extension
 ENV PHPREDIS_VERSION 5.3.2
 RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
@@ -45,5 +42,10 @@ RUN curl -fSL "https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mh
   && chmod +x mhsendmail \
   && mv mhsendmail /usr/local/bin/ \
   && echo "sendmail_path = '/usr/local/bin/mhsendmail --smtp-addr=\"mailhog:1025\"'" >> /usr/local/etc/php/conf.d/mailhog.ini
+
+# preemptively creates log files, and give them to www-data
+RUN cd /var/log \
+  && touch php_error.log xdebug.log \
+  && chown 1001:1001 php_error.log xdebug.log
 
 ENV TERM xterm
