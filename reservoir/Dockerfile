@@ -1,4 +1,4 @@
-FROM drupal:8.8
+FROM drupal:9
 
 # install extra tools
 RUN apt-get update \

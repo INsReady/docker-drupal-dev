@@ -1,4 +1,4 @@
-FROM drupal:8.9
+FROM drupal:8
 
 # install the PHP extensions we need
 RUN apt-get update \
@@ -33,7 +33,7 @@ RUN { \
 } >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # install phpredis extension
-ENV PHPREDIS_VERSION 5.3.2
+ENV PHPREDIS_VERSION 5.3.4
 RUN curl -L -o /tmp/redis.tar.gz https://github.com/phpredis/phpredis/archive/$PHPREDIS_VERSION.tar.gz \
     && tar xfz /tmp/redis.tar.gz \
     && rm -r /tmp/redis.tar.gz \
