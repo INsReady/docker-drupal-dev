@@ -12,6 +12,4 @@ RUN curl -sS https://getcomposer.org/installer | php \
 # download Contenta CMS
 RUN cd /var \
     && rm -rf /var/www \
-    && composer create-project contentacms/contenta-jsonapi-project www --stability dev --no-interaction -vvv \
-    && ln -s /var/www/web /var/www/html \
-    && chown -R www-data:www-data /var/www/web
+    && composer create-project contentacms/contenta-jsonapi-project www --stability dev --no-interaction

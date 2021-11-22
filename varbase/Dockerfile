@@ -13,6 +13,4 @@ RUN curl -sS https://getcomposer.org/installer | php \
 # download varbase
 RUN cd /var \
     && rm -rf /var/www \
-    && composer create-project vardot/varbase-project:^9 www --no-dev --no-interaction -vvv \
-    && ln -s /var/www/docroot /var/www/html \
-    && chown -R www-data:www-data /var/www/docroot
+    && composer create-project vardot/varbase-project:~9 www --no-dev --no-interaction
