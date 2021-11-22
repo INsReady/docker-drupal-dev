@@ -2,7 +2,6 @@
 -	[`9`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/9/Dockerfile)
 -	[`8` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/8/Dockerfile)
 -   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
--   [`reservoir` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/reservoir/Dockerfile)
 -   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`varbase` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/varbase/Dockerfile)
 -	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/7/Dockerfile)
@@ -34,8 +33,6 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 See the supported tags above. Please use the respective Docker tags to download the Drupal distribution below:
 
 - [Contenta CMS](https://www.drupal.org/project/contentacms)
-- [Lightning](https://www.drupal.org/project/lightning)
-- [Reservoir](https://github.com/acquia/reservoir)
 - [Thunder](https://www.drupal.org/project/thunder)
 - [Varbase](https://www.drupal.org/project/varbase)
 - **Drupal Commerce** has its own dedicated [docker image](https://hub.docker.com/r/insready/drupal-commerce/).

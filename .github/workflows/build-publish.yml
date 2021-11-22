@@ -54,15 +54,6 @@ jobs:
           tags: | 
             insready/drupal-dev:contentacms
       -
-        name: Build and push - Reservoir
-        id: docker_build_reservoir
-        uses: docker/build-push-action@v2
-        with:
-          context: ./reservoir/
-          push: true
-          tags: | 
-            insready/drupal-dev:reservoir
-      -
         name: Build and push - Thunder
         id: docker_build_thunder
         uses: docker/build-push-action@v2
