@@ -22,6 +22,7 @@ jobs:
         name: Build and push - D7
         id: docker_build_7
         uses: docker/build-push-action@v3
+        continue-on-error: true
         with:
           context: ./7/
           push: true
@@ -30,6 +31,7 @@ jobs:
         name: Build and push - D8
         id: docker_build_8
         uses: docker/build-push-action@v3
+        continue-on-error: true
         with:
           context: ./8/
           push: true
@@ -38,6 +40,7 @@ jobs:
         name: Build and push - D9
         id: docker_build_9
         uses: docker/build-push-action@v3
+        continue-on-error: true
         with:
           context: ./9/
           push: true
