@@ -6,7 +6,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # install drush launcher, from https://github.com/drush-ops/drush-launcher#installation---phar,
-RUN composer require drush/drush \
+RUN composer require drush/drush -n \
   && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \

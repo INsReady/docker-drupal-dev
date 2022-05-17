@@ -10,7 +10,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer
 
 # install drush launcher, from https://github.com/drush-ops/drush-launcher#installation---phar,
-RUN composer require drush/drush \
+RUN composer require drush/drush -n \
   && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush \

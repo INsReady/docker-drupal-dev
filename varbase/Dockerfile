@@ -9,7 +9,6 @@ RUN apt-get update \
 RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer
 
-
 # download varbase
 RUN cd /var \
     && rm -rf /var/www \
