@@ -4,6 +4,7 @@
 -   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
 -   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`varbase` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/varbase/Dockerfile)
+-   [`govcms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/govcms/Dockerfile)
 -	[`7` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/7/Dockerfile)
 
 This image is updated via pull requests to [the `INsReady/docker-drupal-dev` GitHub repo](https://github.com/INsReady/docker-drupal-dev).
@@ -35,6 +36,7 @@ See the supported tags above. Please use the respective Docker tags to download 
 - [Contenta CMS](https://www.drupal.org/project/contentacms)
 - [Thunder](https://www.drupal.org/project/thunder)
 - [Varbase](https://www.drupal.org/project/varbase)
+- [govCMS](https://www.drupal.org/project/govcms)
 - **Drupal Commerce** has its own dedicated [docker image](https://hub.docker.com/r/insready/drupal-commerce/).
 
 ## Contributing

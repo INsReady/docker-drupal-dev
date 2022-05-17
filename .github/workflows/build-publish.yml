@@ -75,6 +75,16 @@ jobs:
           tags: | 
             insready/drupal-dev:varbase
       -
+        name: Build and push - govCMS
+        id: docker_build_govcms
+        uses: docker/build-push-action@v2
+        continue-on-error: true
+        with:
+          context: ./govcms/
+          push: true
+          tags: | 
+            insready/drupal-dev:govcms
+      -
         name: Update repo description
         uses: peter-evans/dockerhub-description@v2
         with:
