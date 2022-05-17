@@ -13,9 +13,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN composer require drush/drush -n \
   && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar \
   && chmod +x drush.phar \
-  && mv drush.phar /usr/local/bin/drush \
-  && drush self-update \
-  && drush init
+  && mv drush.phar /usr/local/bin/drush
 
 # install Xdebug, from https://xdebug.org/docs/install
 RUN pecl install xdebug \
