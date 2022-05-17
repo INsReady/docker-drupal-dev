@@ -13,3 +13,6 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project vardot/varbase-project:~9 www --no-dev --no-interaction
+    && 	ln -sf /opt/drupal/web /var/www/html \
+    # delete composer cache
+	  && rm -rf "$COMPOSER_HOME"

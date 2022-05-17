@@ -13,3 +13,6 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project govcms/govcms-project www --stability dev --prefer-dist --no-interaction
+    && 	ln -sf /opt/drupal/web /var/www/html \
+    # delete composer cache
+	  && rm -rf "$COMPOSER_HOME"

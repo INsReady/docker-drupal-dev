@@ -12,4 +12,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 # download Contenta CMS
 RUN cd /var \
     && rm -rf /var/www \
-    && composer create-project contentacms/contenta-jsonapi-project www --stability dev --no-interaction
+    && composer create-project contentacms/contenta-jsonapi-project www --stability dev --no-interaction \
+    && 	ln -sf /opt/drupal/web /var/www/html \
+    # delete composer cache
+	  && rm -rf "$COMPOSER_HOME"

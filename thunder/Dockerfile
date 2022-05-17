@@ -13,3 +13,6 @@ RUN curl -sS https://getcomposer.org/installer | php \
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project thunder/thunder-project www --stability dev --no-interaction
+    && 	ln -sf /opt/drupal/web /var/www/html \
+    # delete composer cache
+	  && rm -rf "$COMPOSER_HOME"
