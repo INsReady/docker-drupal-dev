@@ -9,10 +9,10 @@ RUN apt-get update \
 RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer
 
-# download Contenta CMS
+# download govCMS
 RUN cd /var \
     && rm -rf /var/www \
     && composer create-project govcms/govcms-project www --stability dev --prefer-dist --no-interaction
-    && 	ln -sf /opt/drupal/web /var/www/html \
+    && ln -sf /opt/drupal/web /var/www/html \
     # delete composer cache
 	  && rm -rf "$COMPOSER_HOME"
