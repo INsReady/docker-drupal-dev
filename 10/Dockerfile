@@ -1,15 +1,12 @@
-FROM drupal:8
+FROM drupal:10.0-rc
 
 # install the PHP extensions we need
 RUN apt-get update \
   && apt-get install -y git mariadb-client wget nano pv \
   && rm -rf /var/lib/apt/lists/*
 
-# Update Composer to 2, as 1 from upstream requires too much ram 
-RUN composer self-update --2
-
 # install drush launcher, from https://github.com/drush-ops/drush-launcher#installation---phar,
-RUN composer require drush/drush:* -n \
+RUN composer require drush/drush -n \
   && wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar \
   && chmod +x drush.phar \
   && mv drush.phar /usr/local/bin/drush

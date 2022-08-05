@@ -30,15 +30,6 @@ jobs:
           push: true
           tags: insready/drupal-dev:7
       -
-        name: Build and push - D8
-        id: docker_build_8
-        uses: docker/build-push-action@v3
-        continue-on-error: true
-        with:
-          context: ./8/
-          push: true
-          tags: insready/drupal-dev:8
-      -
         name: Build and push - D9
         id: docker_build_9
         uses: docker/build-push-action@v3
@@ -49,6 +40,16 @@ jobs:
           tags: | 
             insready/drupal-dev:9
             insready/drupal-dev:latest
+      -
+        name: Build and push - D10
+        id: docker_build_10
+        uses: docker/build-push-action@v3
+        continue-on-error: true
+        with:
+          context: ./10/
+          push: true
+          tags: | 
+            insready/drupal-dev:10
       -
         name: Build and push - ContentaCMS
         id: docker_build_contenta
