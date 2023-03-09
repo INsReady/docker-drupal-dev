@@ -1,4 +1,4 @@
-FROM drupal:10.0-rc
+FROM drupal:10
 
 # install the PHP extensions we need
 RUN apt-get update \
