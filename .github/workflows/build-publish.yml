@@ -5,7 +5,8 @@ on:
     branches:
       - 'master'
   schedule:
-    - cron: '0 0 1 * *'
+    - cron: '0 0 1 * *' # Monthly
+  workflow_dispatch:
 
 jobs:
   docker:
