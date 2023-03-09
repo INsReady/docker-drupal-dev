@@ -22,12 +22,11 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 - wget
 - nano
 - Composer
-- Drush
-- Drupal Console
+- [Drush Launcher](https://github.com/drush-ops/drush-launcher)
 - Xdebug (Remote debugging enabled as default)
-- Drupal Devel module
 - phpredis
 - mhsendmail (for Mailhog)
+- gpg
 
 ## Distribution supported
 

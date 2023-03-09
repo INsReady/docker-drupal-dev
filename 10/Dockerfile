@@ -2,7 +2,7 @@ FROM drupal:10
 
 # install the PHP extensions we need
 RUN apt-get update \
-  && apt-get install -y git mariadb-client wget nano pv \
+  && apt-get install -y git mariadb-client wget nano pv gpg \
   && rm -rf /var/lib/apt/lists/*
 
 # install drush launcher, from https://github.com/drush-ops/drush-launcher#installation---phar,
