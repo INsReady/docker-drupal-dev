@@ -1,4 +1,4 @@
-FROM drupal:9
+FROM drupal:10
 
 # install extra tools
 RUN apt-get update \
