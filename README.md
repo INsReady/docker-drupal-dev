@@ -1,6 +1,7 @@
 ## Supported tags and respective `Dockerfile` links
--	[`10`, (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/10/Dockerfile)
--	[`9`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/9/Dockerfile)
+-	[`10`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/10/Dockerfile)
+-	[`11` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/11/Dockerfile)
+-	[`9` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/9/Dockerfile)
 -   [`contentacms` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/contentacms/Dockerfile)
 -   [`thunder` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/thunder/Dockerfile)
 -   [`varbase` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/varbase/Dockerfile)

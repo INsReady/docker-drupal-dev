@@ -40,7 +40,6 @@ jobs:
           push: true
           tags: | 
             insready/drupal-dev:9
-            insready/drupal-dev:latest
       -
         name: Build and push - D10
         id: docker_build_10
@@ -51,6 +50,7 @@ jobs:
           push: true
           tags: | 
             insready/drupal-dev:10
+            insready/drupal-dev:latest
       -
         name: Build and push - ContentaCMS
         id: docker_build_contenta
