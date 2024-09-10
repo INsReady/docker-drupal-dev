@@ -1,4 +1,4 @@
-FROM drupal:11.0-rc
+FROM drupal:11
 
 # install the PHP extensions we need
 RUN apt-get update \
