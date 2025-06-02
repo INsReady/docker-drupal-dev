@@ -24,7 +24,7 @@ jobs:
       -
         name: Build and push - D7
         id: docker_build_7
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./7/
@@ -33,7 +33,7 @@ jobs:
       -
         name: Build and push - D9
         id: docker_build_9
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./9/
@@ -43,7 +43,7 @@ jobs:
       -
         name: Build and push - D10
         id: docker_build_10
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./10/
@@ -53,7 +53,7 @@ jobs:
       -
         name: Build and push - D11
         id: docker_build_11
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./11/
@@ -64,7 +64,7 @@ jobs:
       -
         name: Build and push - ContentaCMS
         id: docker_build_contenta
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./contentacms/
@@ -74,7 +74,7 @@ jobs:
       -
         name: Build and push - Thunder
         id: docker_build_thunder
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./thunder/
@@ -84,7 +84,7 @@ jobs:
       -
         name: Build and push - Varbase
         id: docker_build_varbase
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./varbase/
@@ -94,7 +94,7 @@ jobs:
       -
         name: Build and push - govCMS
         id: docker_build_govcms
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./govcms/
