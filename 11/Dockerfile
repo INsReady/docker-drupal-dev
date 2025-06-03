@@ -1,4 +1,4 @@
-FROM drupal:11
+FROM drupal:11-php8.4
 
 # install the PHP extensions we need
 RUN apt-get update \
