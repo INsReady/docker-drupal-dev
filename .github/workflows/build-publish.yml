@@ -62,6 +62,16 @@ jobs:
             insready/drupal-dev:11
             insready/drupal-dev:latest
       -
+        name: Build and push - FrankenPHP D11
+        id: docker_build_frankenphp_11
+        uses: docker/build-push-action@v4
+        continue-on-error: true
+        with:
+          context: ./frankkenphp/
+          push: true
+          tags: | 
+            insready/drupal-dev:frankkenphp
+      -
         name: Build and push - ContentaCMS
         id: docker_build_contenta
         uses: docker/build-push-action@v5
