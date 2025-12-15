@@ -67,10 +67,10 @@ jobs:
         uses: docker/build-push-action@v4
         continue-on-error: true
         with:
-          context: ./frankkenphp/
+          context: ./frankenphp/
           push: true
           tags: | 
-            insready/drupal-dev:frankkenphp
+            insready/drupal-dev:frankenphp
       -
         name: Build and push - ContentaCMS
         id: docker_build_contenta
