@@ -25,7 +25,7 @@ COPY --from=composer/composer:2-bin /composer /usr/local/bin/
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 WORKDIR /opt/drupal
-COPY Caddyfile /etc/caddy/Caddyfile
+COPY Caddyfile /etc/frankenphp/Caddyfile
 RUN set -eux; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
 	rm -rf /app/public; \
