@@ -1,4 +1,5 @@
 ## Supported tags and respective `Dockerfile` links
+-	[`frankenphp` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/frankenphp/Dockerfile)
 -	[`11`, `latest` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/11/Dockerfile)
 -	[`10` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/10/Dockerfile)
 -	[`9` (*Dockerfile*)](https://github.com/INsReady/docker-drupal-dev/blob/master/9/Dockerfile)
@@ -19,10 +20,8 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 ## What tools are included in the developer environment?
 
 - Git
-- MariaDB Client
 - wget
 - nano
-- Composer
 - Xdebug (Remote debugging enabled as default)
 - phpredis
 - mhsendmail (for Mailhog)

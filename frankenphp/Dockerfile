@@ -10,12 +10,23 @@ RUN install-php-extensions \
     gd \
     opcache \
     pdo_mysql \
+    pdo_pgsql \
     zip
 
 COPY --from=drupal:php8.4 /opt/drupal /opt/drupal
 COPY --from=drupal:php8.4 /usr/local/etc/php/conf.d/* /usr/local/etc/php/conf.d/
-
 COPY --from=composer/composer:2-bin /composer /usr/local/bin/
+
+# enable Xdebug remote debugging
+RUN { \
+    echo 'xdebug.mode=debug'; \
+    echo 'xdebug.discover_client_host=true'; \
+    echo 'xdebug.client_host=host.docker.internal'; \
+    echo 'xdebug.start_with_request=yes'; \
+    echo 'memory_limit = 4096M'; \
+    echo 'error_log = /var/log/php_error.log'; \
+    echo 'xdebug.log = /var/log/xdebug.log'; \
+} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 # https://github.com/docker-library/drupal/pull/259
 # https://github.com/moby/buildkit/issues/4503
