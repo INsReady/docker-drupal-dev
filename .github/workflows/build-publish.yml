@@ -64,7 +64,7 @@ jobs:
       -
         name: Build and push - FrankenPHP D11
         id: docker_build_frankenphp_11
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         continue-on-error: true
         with:
           context: ./frankenphp/
