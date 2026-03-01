@@ -48,4 +48,9 @@ RUN set -eux; \
 	echo "\$settings['trusted_host_patterns'] = ['^' . preg_quote(\$_SERVER['SERVER_NAME'] ?? 'localhost', '/') . '\$'];" >> /opt/drupal/web/sites/default/default.settings.php; \
 	cp /opt/drupal/web/sites/default/default.settings.php /opt/drupal/web/sites/default/settings.php
 
+# preemptively creates log files, and give them to www-data
+RUN cd /var/log \
+  && touch php_error.log xdebug.log \
+  && chown 1001:1001 php_error.log xdebug.log
+
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
