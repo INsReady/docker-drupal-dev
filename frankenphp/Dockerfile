@@ -18,7 +18,8 @@ COPY --from=drupal:php8.4 /usr/local/etc/php/conf.d/* /usr/local/etc/php/conf.d/
 COPY --from=composer/composer:2-bin /composer /usr/local/bin/
 
 # install Xdebug, from https://xdebug.org/docs/install
-RUN pecl install xdebug \
+# procps is required for Google Antigravity
+RUN pecl install xdebug procps \
   && docker-php-ext-enable xdebug
 
 # enable Xdebug remote debugging
