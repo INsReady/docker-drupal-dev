@@ -26,6 +26,8 @@ The official Drupal Docker library is optimized for production. Therefore, it do
 - phpredis
 - mhsendmail (for Mailhog)
 - gpg
+- pv
+- ps (Required by Antigravity)
 
 ## Distribution supported
 

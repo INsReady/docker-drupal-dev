@@ -1,8 +1,9 @@
 FROM dunglas/frankenphp:1-php8.4
 
 # install the PHP extensions we need
+# procps is required for Google Antigravity
 RUN apt-get update \
-  && apt-get install -y git mariadb-client wget nano pv gpg \
+  && apt-get install -y git mariadb-client wget nano pv gpg procps \
   && rm -rf /var/lib/apt/lists/*
 
 RUN install-php-extensions \
@@ -18,8 +19,7 @@ COPY --from=drupal:php8.4 /usr/local/etc/php/conf.d/* /usr/local/etc/php/conf.d/
 COPY --from=composer/composer:2-bin /composer /usr/local/bin/
 
 # install Xdebug, from https://xdebug.org/docs/install
-# procps is required for Google Antigravity
-RUN pecl install xdebug procps \
+RUN pecl install xdebug \
   && docker-php-ext-enable xdebug
 
 # enable Xdebug remote debugging
